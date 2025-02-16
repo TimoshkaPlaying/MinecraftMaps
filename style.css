@@ -1,1 +1,120 @@
 /* Здесь будут описаны все стили проекта */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@700&display=swap');
+
+* {
+    font-family: "PT Sans Narrow", serif;
+    font-style: normal;
+    color: white;
+    user-select: none;
+}
+
+p {
+    font-weight: 50;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("src/bodyBG.jpg");
+}
+
+header {
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("src/headerBG.png");
+    box-shadow: 0px 0px 20px 10px black;
+}
+
+.headerContainer h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headerMaps {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerMaps div {
+    cursor: pointer;
+}
+
+main {
+    width: 40vw;
+    margin-top: 2vw;
+    margin-bottom: 2vh; 
+}
+
+.card {
+    background-color: rgb(54, 54, 54);
+    box-shadow: 0px 0px 10px 5px rgb(54, 54, 54);
+    cursor: pointer;
+    margin-bottom: 4vh;
+    padding: 0 0 2vh 0;
+}
+
+.card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapName {
+    width: 100%;
+    background-color: rgb(69, 69, 69);
+    margin-top: 0;
+    text-align: center;
+}
+
+.mapImage {
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.mapDecription {
+    width: 90%;
+    text-align: center;
+
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.pages button {
+    background-color: green;
+    cursor: pointer;
+}
+
+.pageNow {
+    background-color: rgb(0, 54, 0);
+}
+
+footer {
+    width: 40vw;
+    height: 15vh;
+    background-image: url("src/headerBG.png");
+    box-shadow: 0px 0px 20px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+.contacts {
+    display: flex;
+    text-align: start;
+    justify-content: space-evenly;
+    gap: 1vw;
+}
