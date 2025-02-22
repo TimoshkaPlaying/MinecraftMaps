@@ -1,0 +1,8 @@
+[
+    {
+    "cardName":"Тест (1.16.5)",
+    "photo":"src/mapImage.jpg",
+    "description":"бла бла бла",
+    "photos":["slider1.png","slider2.png","slider3.png"]
+    }
+]
