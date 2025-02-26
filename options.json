@@ -2,34 +2,49 @@
 {
     "cardName": "Тест (1.16.5)",
     "cardHref": "map.html?card=Тест+%281.16.5%29",
-    "cardMoreImage": "src/mapImage.jpg",
+    "cardImage": "src/mapImage.jpg",
     "cardDescription": "Краткое описание карты Тест",
     "cardMoreDescription": "Описание карты Тест (1.16.5).",
     "cardSlider": ["src/slider1.png", "src/slider2.png", "src/slider3.png"],
     "version": "1.16.5",
     "size": "20MB",
-    "downloadFile": "maps/test.rar"
+    "downloadFile": "maps/test.rar",
+    "editor": "true"
 },
 {
     "cardName": "Тест2 (1.18.2)",
     "cardHref": "map.html?card=Тест2+%281.18.2%29",
-    "cardMoreImage": "src/mapImage.jpg",
+    "cardImage": "src/mapImage.jpg",
     "cardDescription": "Краткое описание карты Тест2",
     "cardMoreDescription": "Описание карты Тест2 (1.18.2).",
     "cardSlider": ["src/slider1.png", "src/slider2.png"],
     "version": "1.18.2",
     "size": "25MB",
-    "downloadFile": "maps/test.rar"
+    "downloadFile": "maps/test.rar",
+    "editor": "false"
 },
 {
     "cardName": "Тест3 (1.20.1)",
     "cardHref": "map.html?card=Тест3+%281.20.1%29",
-    "cardMoreImage": "src/mapImage.jpg",
+    "cardImage": "src/mapImage.jpg",
     "cardDescription": "Краткое описание карты Тест3",
     "cardMoreDescription": "Описание карты Тест3 (1.20.1).",
     "cardSlider": ["src/slider1.png"],
     "version": "1.20.1",
     "size": "30MB",
-    "downloadFile": "maps/test.rar"
+    "downloadFile": "maps/test.rar",
+    "editor": "true"
+},
+{
+    "cardName": "Тест4 (1.20.1)",
+    "cardHref": "map.html?card=Тест4+%281.20.1%29",
+    "cardImage": "src/mapImage.jpg",
+    "cardDescription": "Краткое описание карты Тест4",
+    "cardMoreDescription": "Описание карты Тест4 (1.20.1).",
+    "cardSlider": ["src/slider1.png"],
+    "version": "1.20.1",
+    "size": "30MB",
+    "downloadFile": "maps/test.rar",
+    "editor": "true"
 }
 ]

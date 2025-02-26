@@ -71,7 +71,6 @@ right_arrow.addEventListener("click", function() {
 document.addEventListener("DOMContentLoaded", function() {
     let params = new URLSearchParams(window.location.search)
     let cardName = params.get("card")
-    console.log(cardName)
     if (!cardName) {
         console.error("Ошибка! Карта не найдена!")
         return
@@ -79,14 +78,13 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("options.json")
         .then(response => response.json())
         .then(data => {
-            console.log(data)
             let card = data.find(item => item.cardName === cardName)
             if (!card) {
                 console.error("Ошибка! Карта не найдена в options.json!")
                 return
             }
             document.querySelector(".cardName").textContent = card.cardName
-            document.querySelector(".cardMoreImage").src = card.cardMoreImage
+            document.querySelector(".cardMoreImage").src = card.cardImage
             document.querySelector(".cardMoreDecription").textContent = card.cardMoreDescription
             images = card.cardSlider
             document.querySelector(".downloadButton").dataset.url = card.downloadFile

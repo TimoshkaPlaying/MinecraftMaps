@@ -23,12 +23,18 @@ body {
 
 header {
     width: 40vw;
-    height: 30vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url("src/headerBG.png");
     box-shadow: 0px 0px 20px 10px black;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .headerContainer h1 {
@@ -38,6 +44,7 @@ header {
 }
 
 .headerMaps {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -45,6 +52,18 @@ header {
 
 .headerMaps div {
     cursor: pointer;
+}
+
+.releaseButton {
+    padding: 1vh 1vw;
+    background-color: greenyellow;
+    color: black;
+    text-decoration: none;
+    margin-top: 3vh;
+}
+
+.releaseButton:hover {
+    background-color: rgb(122, 191, 18);
 }
 
 main {
