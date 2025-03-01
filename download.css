@@ -78,3 +78,7 @@ option {
 .releaseButton:hover {
     background-color: rgb(122, 191, 18);
 }
+
+input {
+    color: black;
+}
