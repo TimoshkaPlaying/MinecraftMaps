@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="download.css" rel="stylesheet"></link>
-    <script type="text/python" src="download.py"></script>
+    <script src="download.js" defer></script>
 
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
@@ -19,44 +19,46 @@
     </header>
     <main>
         <div class="addCardMenu">
-            <div class="cardOptionsInput">
-                <h3>Введите название вашей карты:</h3>
-                <input type="text" class="cardName">
-            </div>
-            <div class="cardOptionsInput">
-                <h3>Введите краткое описание вашей карты:</h3>
-                <input type="text" class="cardDescription">
-            </div>
-            <div class="cardOptionsInput">
-                <h3>Введите полное описание вашей карты:</h3>
-                <input type="text" class="cardMoreDescription">
-            </div>
-            <div class="cardOptionsInput">
-                <h3>Загрузите главное изображение:</h3>
-                <input type="file" class="cardMainImage file">
-            </div>
-            <div class="cardOptionsInput">
-                <h3>Загрузите дополнительные изображения:</h3>
-                <input type="file" class="cardImages file">
-            </div>
-            <div class="cardOptionsInput">
-                <h3>Загрузите архив с вашей картой:</h3>
-                <input type="file" class="cardFile file">
-            </div>
-            <div class="cardOptionsInput">
-                <h3>Выберите версию вашей карты:</h3>
-                <select>
-                    <option value="">1.12.2</option>
-                    <option value="">1.14.4</option>
-                    <option value="">1.16.5</option>
-                    <option value="">1.18.2</option>
-                    <option value="">1.19.2</option>
-                    <option value="">1.20.1</option>
-                </select>
-            </div>
-            <div class="cardOptionsInput">
-                <button class="releaseButton" onclick="location.href='index.html';">Опубликовать</button>
-            </div>
+            <form id="uploadForm">
+                <div class="cardOptionsInput">
+                    <h3>Введите название вашей карты:</h3>
+                    <input type="text" class="cardName">
+                </div>
+                <div class="cardOptionsInput">
+                    <h3>Введите краткое описание вашей карты:</h3>
+                    <input type="text" class="cardDescription">
+                </div>
+                <div class="cardOptionsInput">
+                    <h3>Введите полное описание вашей карты:</h3>
+                    <input type="text" class="cardMoreDescription">
+                </div>
+                <div class="cardOptionsInput">
+                    <h3>Загрузите главное изображение:</h3>
+                    <input type="file" class="cardMainImage file">
+                </div>
+                <div class="cardOptionsInput">
+                    <h3>Загрузите дополнительные изображения:</h3>
+                    <input type="file" class="cardImages file">
+                </div>
+                <div class="cardOptionsInput">
+                    <h3>Загрузите архив с вашей картой:</h3>
+                    <input type="file" class="cardFile file">
+                </div>
+                <div class="cardOptionsInput">
+                    <h3>Выберите версию вашей карты:</h3>
+                    <select>
+                        <option value="">1.12.2</option>
+                        <option value="">1.14.4</option>
+                        <option value="">1.16.5</option>
+                        <option value="">1.18.2</option>
+                        <option value="">1.19.2</option>
+                        <option value="">1.20.1</option>
+                    </select>
+                </div>
+                <div class="cardOptionsInput">
+                    <button class="releaseButton">Опубликовать</button>
+                </div>
+            </form>
         </div>
     </main>
 </body>

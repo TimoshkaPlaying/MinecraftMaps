@@ -4,7 +4,8 @@
   "description": "This website was created by Timofey Pugachev for people who want to find interesting maps for the game Minecraft. I want to do static website (you can't add your maps to it). If you want something you can write me, because I can add new functions!",
   "main": "map.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.9"
   }
 }
