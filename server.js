@@ -67,6 +67,7 @@ app.post("/download", upload.fields([
         const fileData = fs.readFileSync(optionsFile, "utf-8")
         options = JSON.parse(fileData)
     }
+    console.log(options)
     options.push(newCard)
     fs.writeFileSync(optionsFile, JSON.stringify(options, null, 4), "utf-8")
 

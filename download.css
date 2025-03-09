@@ -82,3 +82,7 @@ option {
 input {
     color: black;
 }
+
+input[type="file"] {
+    color: white;
+}
