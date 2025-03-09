@@ -23,7 +23,7 @@ document.getElementById("uploadForm").addEventListener("submit", function(event)
     formData.append("cardHref",  cardHref)
     formData.append("cardImage", cardImage)
     formData.append("cardDescription", cardDescription)
-    formData.append("cardMoreDescriprion", cardMoreDescription)
+    formData.append("cardMoreDescription", cardMoreDescription)
     // formData.append("cardSlider", cardSlider)
     for (let i=0; i<cardSlider.length; i++) {
         formData.append("cardSlider", cardSlider[i])
