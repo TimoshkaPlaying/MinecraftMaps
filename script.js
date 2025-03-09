@@ -38,13 +38,15 @@ fetch("options.json")
             data = data.reverse()
             let params = new URLSearchParams(window.location.search)
             let cardVersion = params.get("version")
+            let editor = params.get("editor")
             if (!cardVersion) {
                 console.error("Ошибка! Версия не найдена!")
                 // return
             }
             for (let i=0; i<data.length; i+=1) {
                 if (data[i]["version"] == cardVersion || !cardVersion) {
-                    // Создаём div с классом card
+                    if (data[i]["editor"] == editor || !editor) {
+                        // Создаём div с классом card
                     let div_card = document.createElement("div")
                     div_card.classList.add("card")
                     cards.appendChild(div_card)
@@ -69,6 +71,7 @@ fetch("options.json")
                     p_cardDecription.classList.add("cardDescription")
                     p_cardDecription.textContent = data[i]["cardDescription"]
                     a_toMapLink.appendChild(p_cardDecription)
+                    }
                 }
             }
         })
